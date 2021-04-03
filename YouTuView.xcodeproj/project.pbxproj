@@ -16,6 +16,7 @@
 		1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D8902618483800DEC060 /* SceneDelegate.swift */; };
 		1992D893261849BD00DEC060 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D892261849BD00DEC060 /* ListViewController.swift */; };
 		1992D89726184B1D00DEC060 /* SuggestVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D89626184B1D00DEC060 /* SuggestVideoView.swift */; };
+		D808AC4C0CC176A50A400F1D /* Pods_YouTuView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1751C06553515067507936F7 /* Pods_YouTuView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1399D3F664F781D1F980C9B0 /* Pods-YouTuView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTuView.release.xcconfig"; path = "Target Support Files/Pods-YouTuView/Pods-YouTuView.release.xcconfig"; sourceTree = "<group>"; };
+		1751C06553515067507936F7 /* Pods_YouTuView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTuView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1992D85D261843F500DEC060 /* YouTuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1992D860261843F500DEC060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1992D864261843F500DEC060 /* WatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		1992D8902618483800DEC060 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1992D892261849BD00DEC060 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1992D89626184B1D00DEC060 /* SuggestVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestVideoView.swift; sourceTree = "<group>"; };
+		87A5C858DDEB257DE20D04D3 /* Pods-YouTuView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTuView.debug.xcconfig"; path = "Target Support Files/Pods-YouTuView/Pods-YouTuView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D808AC4C0CC176A50A400F1D /* Pods_YouTuView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				1992D876261843F600DEC060 /* YouTuViewTests */,
 				1992D881261843F600DEC060 /* YouTuViewUITests */,
 				1992D85E261843F500DEC060 /* Products */,
+				FBA398738BB7536E8B96AA31 /* Pods */,
+				8FB6D86E4A6C17CDC67D3C60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +154,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8FB6D86E4A6C17CDC67D3C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1751C06553515067507936F7 /* Pods_YouTuView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBA398738BB7536E8B96AA31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87A5C858DDEB257DE20D04D3 /* Pods-YouTuView.debug.xcconfig */,
+				1399D3F664F781D1F980C9B0 /* Pods-YouTuView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1992D887261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuView" */;
 			buildPhases = (
+				2CB1F414A4D81A986C1F4E63 /* [CP] Check Pods Manifest.lock */,
 				1992D859261843F500DEC060 /* Sources */,
 				1992D85A261843F500DEC060 /* Frameworks */,
 				1992D85B261843F500DEC060 /* Resources */,
+				851E9E5D2DCFCFC1A4F6CDB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +297,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CB1F414A4D81A986C1F4E63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YouTuView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		851E9E5D2DCFCFC1A4F6CDB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouTuView/Pods-YouTuView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YouTuView/Pods-YouTuView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YouTuView/Pods-YouTuView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1992D859261843F500DEC060 /* Sources */ = {
@@ -445,6 +514,7 @@
 		};
 		1992D888261843F600DEC060 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A5C858DDEB257DE20D04D3 /* Pods-YouTuView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +535,7 @@
 		};
 		1992D889261843F600DEC060 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1399D3F664F781D1F980C9B0 /* Pods-YouTuView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

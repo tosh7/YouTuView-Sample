@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		195F66922618526B00D09A01 /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F66912618526B00D09A01 /* VideoInfo.swift */; };
 		195F669626186A5400D09A01 /* SuggestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F669526186A5400D09A01 /* SuggestCollectionViewCell.swift */; };
-		195F669826186C7400D09A01 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F669726186C7400D09A01 /* Section.swift */; };
+		195F669826186C7400D09A01 /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F669726186C7400D09A01 /* SectionType.swift */; };
 		195F669A26186CAC00D09A01 /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F669926186CAC00D09A01 /* ListSection.swift */; };
 		1992D861261843F500DEC060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D860261843F500DEC060 /* AppDelegate.swift */; };
 		1992D865261843F500DEC060 /* WatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D864261843F500DEC060 /* WatchViewController.swift */; };
@@ -45,7 +45,7 @@
 		1751C06553515067507936F7 /* Pods_YouTuView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTuView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		195F66912618526B00D09A01 /* VideoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
 		195F669526186A5400D09A01 /* SuggestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestCollectionViewCell.swift; sourceTree = "<group>"; };
-		195F669726186C7400D09A01 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		195F669726186C7400D09A01 /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
 		195F669926186CAC00D09A01 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
 		1992D85D261843F500DEC060 /* YouTuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1992D860261843F500DEC060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 			children = (
 				1992D860261843F500DEC060 /* AppDelegate.swift */,
 				1992D8902618483800DEC060 /* SceneDelegate.swift */,
-				195F669726186C7400D09A01 /* Section.swift */,
+				195F669726186C7400D09A01 /* SectionType.swift */,
 				1992D869261843F600DEC060 /* Assets.xcassets */,
 				1992D86B261843F600DEC060 /* LaunchScreen.storyboard */,
 				1992D86E261843F600DEC060 /* Info.plist */,
@@ -406,7 +406,7 @@
 				1992D89726184B1D00DEC060 /* SuggestVideoView.swift in Sources */,
 				195F66922618526B00D09A01 /* VideoInfo.swift in Sources */,
 				195F669626186A5400D09A01 /* SuggestCollectionViewCell.swift in Sources */,
-				195F669826186C7400D09A01 /* Section.swift in Sources */,
+				195F669826186C7400D09A01 /* SectionType.swift in Sources */,
 				1992D893261849BD00DEC060 /* ListViewController.swift in Sources */,
 				1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */,
 				195F669A26186CAC00D09A01 /* ListSection.swift in Sources */,

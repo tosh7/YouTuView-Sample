@@ -1,6 +1,6 @@
 import UIKit
 
-protocol Section {
+protocol SectionType {
     var numberOfItems: Int { get }
 
     var didSelectItem: ((Int) -> Void)? { get }

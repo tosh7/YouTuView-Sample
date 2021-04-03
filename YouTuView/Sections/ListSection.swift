@@ -1,6 +1,6 @@
 import UIKit
 
-struct ListSection: Section {
+struct ListSection: SectionType {
     var videos: [VideoInfo]
     var numberOfItems: Int { videos.count }
 

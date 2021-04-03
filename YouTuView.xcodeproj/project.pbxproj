@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -168,7 +168,6 @@
 				87A5C858DDEB257DE20D04D3 /* Pods-YouTuView.debug.xcconfig */,
 				1399D3F664F781D1F980C9B0 /* Pods-YouTuView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -180,6 +179,7 @@
 			buildConfigurationList = 1992D887261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuView" */;
 			buildPhases = (
 				2CB1F414A4D81A986C1F4E63 /* [CP] Check Pods Manifest.lock */,
+				195F668D26184F7200D09A01 /* R.swift */,
 				1992D859261843F500DEC060 /* Sources */,
 				1992D85A261843F500DEC060 /* Frameworks */,
 				1992D85B261843F500DEC060 /* Resources */,
@@ -299,6 +299,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		195F668D26184F7200D09A01 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		2CB1F414A4D81A986C1F4E63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -7,5 +7,6 @@ target 'YouTuView' do
 
   # Pods for YouTuView
     pod 'SnapKit', '~> 5.0.0'
+    pod 'R.swift'
 
 end

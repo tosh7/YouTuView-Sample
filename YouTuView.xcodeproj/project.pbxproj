@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195F66922618526B00D09A01 /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F66912618526B00D09A01 /* VideoInfo.swift */; };
 		1992D861261843F500DEC060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D860261843F500DEC060 /* AppDelegate.swift */; };
 		1992D865261843F500DEC060 /* WatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D864261843F500DEC060 /* WatchViewController.swift */; };
 		1992D86A261843F600DEC060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1992D869261843F600DEC060 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		1399D3F664F781D1F980C9B0 /* Pods-YouTuView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTuView.release.xcconfig"; path = "Target Support Files/Pods-YouTuView/Pods-YouTuView.release.xcconfig"; sourceTree = "<group>"; };
 		1751C06553515067507936F7 /* Pods_YouTuView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTuView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		195F66912618526B00D09A01 /* VideoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
 		1992D85D261843F500DEC060 /* YouTuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1992D860261843F500DEC060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1992D864261843F500DEC060 /* WatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195F66902618524E00D09A01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				195F66912618526B00D09A01 /* VideoInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1992D854261843F500DEC060 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 				1992D86E261843F600DEC060 /* Info.plist */,
 				1992D89426184A2900DEC060 /* ViewContollers */,
 				1992D89526184B0400DEC060 /* Views */,
+				195F66902618524E00D09A01 /* Model */,
 			);
 			path = YouTuView;
 			sourceTree = "<group>";
@@ -368,6 +379,7 @@
 				1992D865261843F500DEC060 /* WatchViewController.swift in Sources */,
 				1992D861261843F500DEC060 /* AppDelegate.swift in Sources */,
 				1992D89726184B1D00DEC060 /* SuggestVideoView.swift in Sources */,
+				195F66922618526B00D09A01 /* VideoInfo.swift in Sources */,
 				1992D893261849BD00DEC060 /* ListViewController.swift in Sources */,
 				1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */,
 			);

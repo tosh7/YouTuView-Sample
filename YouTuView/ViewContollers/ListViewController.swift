@@ -1,6 +1,7 @@
 import UIKit
 
 final class ListViewController: UIViewController {
+
     init() {
         super.init(nibName: nil, bundle: nil)
     }

@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1992D861261843F500DEC060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D860261843F500DEC060 /* AppDelegate.swift */; };
-		1992D863261843F500DEC060 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D862261843F500DEC060 /* SceneDelegate.swift */; };
 		1992D865261843F500DEC060 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D864261843F500DEC060 /* ViewController.swift */; };
-		1992D868261843F500DEC060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1992D866261843F500DEC060 /* Main.storyboard */; };
 		1992D86A261843F600DEC060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1992D869261843F600DEC060 /* Assets.xcassets */; };
 		1992D86D261843F600DEC060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1992D86B261843F600DEC060 /* LaunchScreen.storyboard */; };
 		1992D878261843F600DEC060 /* YouTuViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D877261843F600DEC060 /* YouTuViewTests.swift */; };
 		1992D883261843F600DEC060 /* YouTuViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D882261843F600DEC060 /* YouTuViewUITests.swift */; };
+		1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D8902618483800DEC060 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +36,7 @@
 /* Begin PBXFileReference section */
 		1992D85D261843F500DEC060 /* YouTuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1992D860261843F500DEC060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1992D862261843F500DEC060 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1992D864261843F500DEC060 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1992D867261843F500DEC060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1992D869261843F600DEC060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1992D86C261843F600DEC060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1992D86E261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		1992D87E261843F600DEC060 /* YouTuViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTuViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1992D882261843F600DEC060 /* YouTuViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTuViewUITests.swift; sourceTree = "<group>"; };
 		1992D884261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1992D8902618483800DEC060 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				1992D860261843F500DEC060 /* AppDelegate.swift */,
-				1992D862261843F500DEC060 /* SceneDelegate.swift */,
+				1992D8902618483800DEC060 /* SceneDelegate.swift */,
 				1992D864261843F500DEC060 /* ViewController.swift */,
-				1992D866261843F500DEC060 /* Main.storyboard */,
 				1992D869261843F600DEC060 /* Assets.xcassets */,
 				1992D86B261843F600DEC060 /* LaunchScreen.storyboard */,
 				1992D86E261843F600DEC060 /* Info.plist */,
@@ -233,7 +230,6 @@
 			files = (
 				1992D86D261843F600DEC060 /* LaunchScreen.storyboard in Resources */,
 				1992D86A261843F600DEC060 /* Assets.xcassets in Resources */,
-				1992D868261843F500DEC060 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +256,7 @@
 			files = (
 				1992D865261843F500DEC060 /* ViewController.swift in Sources */,
 				1992D861261843F500DEC060 /* AppDelegate.swift in Sources */,
-				1992D863261843F500DEC060 /* SceneDelegate.swift in Sources */,
+				1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +292,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1992D866261843F500DEC060 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1992D867261843F500DEC060 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1992D86B261843F600DEC060 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56787CM63P;
 				INFOPLIST_FILE = YouTuView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56787CM63P;
 				INFOPLIST_FILE = YouTuView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

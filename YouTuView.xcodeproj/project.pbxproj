@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1992D861261843F500DEC060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D860261843F500DEC060 /* AppDelegate.swift */; };
+		1992D863261843F500DEC060 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D862261843F500DEC060 /* SceneDelegate.swift */; };
+		1992D865261843F500DEC060 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D864261843F500DEC060 /* ViewController.swift */; };
+		1992D868261843F500DEC060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1992D866261843F500DEC060 /* Main.storyboard */; };
+		1992D86A261843F600DEC060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1992D869261843F600DEC060 /* Assets.xcassets */; };
+		1992D86D261843F600DEC060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1992D86B261843F600DEC060 /* LaunchScreen.storyboard */; };
+		1992D878261843F600DEC060 /* YouTuViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D877261843F600DEC060 /* YouTuViewTests.swift */; };
+		1992D883261843F600DEC060 /* YouTuViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D882261843F600DEC060 /* YouTuViewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1992D874261843F600DEC060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1992D855261843F500DEC060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1992D85C261843F500DEC060;
+			remoteInfo = YouTuView;
+		};
+		1992D87F261843F600DEC060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1992D855261843F500DEC060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1992D85C261843F500DEC060;
+			remoteInfo = YouTuView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1992D85D261843F500DEC060 /* YouTuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1992D860261843F500DEC060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1992D862261843F500DEC060 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1992D864261843F500DEC060 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1992D867261843F500DEC060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1992D869261843F600DEC060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1992D86C261843F600DEC060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1992D86E261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1992D873261843F600DEC060 /* YouTuViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTuViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1992D877261843F600DEC060 /* YouTuViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTuViewTests.swift; sourceTree = "<group>"; };
+		1992D879261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1992D87E261843F600DEC060 /* YouTuViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTuViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1992D882261843F600DEC060 /* YouTuViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTuViewUITests.swift; sourceTree = "<group>"; };
+		1992D884261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1992D85A261843F500DEC060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1992D870261843F600DEC060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1992D87B261843F600DEC060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1992D854261843F500DEC060 = {
+			isa = PBXGroup;
+			children = (
+				1992D85F261843F500DEC060 /* YouTuView */,
+				1992D876261843F600DEC060 /* YouTuViewTests */,
+				1992D881261843F600DEC060 /* YouTuViewUITests */,
+				1992D85E261843F500DEC060 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1992D85E261843F500DEC060 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1992D85D261843F500DEC060 /* YouTuView.app */,
+				1992D873261843F600DEC060 /* YouTuViewTests.xctest */,
+				1992D87E261843F600DEC060 /* YouTuViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1992D85F261843F500DEC060 /* YouTuView */ = {
+			isa = PBXGroup;
+			children = (
+				1992D860261843F500DEC060 /* AppDelegate.swift */,
+				1992D862261843F500DEC060 /* SceneDelegate.swift */,
+				1992D864261843F500DEC060 /* ViewController.swift */,
+				1992D866261843F500DEC060 /* Main.storyboard */,
+				1992D869261843F600DEC060 /* Assets.xcassets */,
+				1992D86B261843F600DEC060 /* LaunchScreen.storyboard */,
+				1992D86E261843F600DEC060 /* Info.plist */,
+			);
+			path = YouTuView;
+			sourceTree = "<group>";
+		};
+		1992D876261843F600DEC060 /* YouTuViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				1992D877261843F600DEC060 /* YouTuViewTests.swift */,
+				1992D879261843F600DEC060 /* Info.plist */,
+			);
+			path = YouTuViewTests;
+			sourceTree = "<group>";
+		};
+		1992D881261843F600DEC060 /* YouTuViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1992D882261843F600DEC060 /* YouTuViewUITests.swift */,
+				1992D884261843F600DEC060 /* Info.plist */,
+			);
+			path = YouTuViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1992D85C261843F500DEC060 /* YouTuView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1992D887261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuView" */;
+			buildPhases = (
+				1992D859261843F500DEC060 /* Sources */,
+				1992D85A261843F500DEC060 /* Frameworks */,
+				1992D85B261843F500DEC060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouTuView;
+			productName = YouTuView;
+			productReference = 1992D85D261843F500DEC060 /* YouTuView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1992D872261843F600DEC060 /* YouTuViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1992D88A261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuViewTests" */;
+			buildPhases = (
+				1992D86F261843F600DEC060 /* Sources */,
+				1992D870261843F600DEC060 /* Frameworks */,
+				1992D871261843F600DEC060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1992D875261843F600DEC060 /* PBXTargetDependency */,
+			);
+			name = YouTuViewTests;
+			productName = YouTuViewTests;
+			productReference = 1992D873261843F600DEC060 /* YouTuViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1992D87D261843F600DEC060 /* YouTuViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1992D88D261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuViewUITests" */;
+			buildPhases = (
+				1992D87A261843F600DEC060 /* Sources */,
+				1992D87B261843F600DEC060 /* Frameworks */,
+				1992D87C261843F600DEC060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1992D880261843F600DEC060 /* PBXTargetDependency */,
+			);
+			name = YouTuViewUITests;
+			productName = YouTuViewUITests;
+			productReference = 1992D87E261843F600DEC060 /* YouTuViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1992D855261843F500DEC060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1992D85C261843F500DEC060 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					1992D872261843F600DEC060 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1992D85C261843F500DEC060;
+					};
+					1992D87D261843F600DEC060 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1992D85C261843F500DEC060;
+					};
+				};
+			};
+			buildConfigurationList = 1992D858261843F500DEC060 /* Build configuration list for PBXProject "YouTuView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1992D854261843F500DEC060;
+			productRefGroup = 1992D85E261843F500DEC060 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1992D85C261843F500DEC060 /* YouTuView */,
+				1992D872261843F600DEC060 /* YouTuViewTests */,
+				1992D87D261843F600DEC060 /* YouTuViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1992D85B261843F500DEC060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1992D86D261843F600DEC060 /* LaunchScreen.storyboard in Resources */,
+				1992D86A261843F600DEC060 /* Assets.xcassets in Resources */,
+				1992D868261843F500DEC060 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1992D871261843F600DEC060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1992D87C261843F600DEC060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1992D859261843F500DEC060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1992D865261843F500DEC060 /* ViewController.swift in Sources */,
+				1992D861261843F500DEC060 /* AppDelegate.swift in Sources */,
+				1992D863261843F500DEC060 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1992D86F261843F600DEC060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1992D878261843F600DEC060 /* YouTuViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1992D87A261843F600DEC060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1992D883261843F600DEC060 /* YouTuViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1992D875261843F600DEC060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1992D85C261843F500DEC060 /* YouTuView */;
+			targetProxy = 1992D874261843F600DEC060 /* PBXContainerItemProxy */;
+		};
+		1992D880261843F600DEC060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1992D85C261843F500DEC060 /* YouTuView */;
+			targetProxy = 1992D87F261843F600DEC060 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1992D866261843F500DEC060 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1992D867261843F500DEC060 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1992D86B261843F600DEC060 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1992D86C261843F600DEC060 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1992D885261843F600DEC060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1992D886261843F600DEC060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1992D888261843F600DEC060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				INFOPLIST_FILE = YouTuView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1992D889261843F600DEC060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				INFOPLIST_FILE = YouTuView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1992D88B261843F600DEC060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				INFOPLIST_FILE = YouTuViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTuView.app/YouTuView";
+			};
+			name = Debug;
+		};
+		1992D88C261843F600DEC060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				INFOPLIST_FILE = YouTuViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTuView.app/YouTuView";
+			};
+			name = Release;
+		};
+		1992D88E261843F600DEC060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				INFOPLIST_FILE = YouTuViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YouTuView;
+			};
+			name = Debug;
+		};
+		1992D88F261843F600DEC060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56787CM63P;
+				INFOPLIST_FILE = YouTuViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YouTuView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1992D858261843F500DEC060 /* Build configuration list for PBXProject "YouTuView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1992D885261843F600DEC060 /* Debug */,
+				1992D886261843F600DEC060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1992D887261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1992D888261843F600DEC060 /* Debug */,
+				1992D889261843F600DEC060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1992D88A261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1992D88B261843F600DEC060 /* Debug */,
+				1992D88C261843F600DEC060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1992D88D261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1992D88E261843F600DEC060 /* Debug */,
+				1992D88F261843F600DEC060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1992D855261843F500DEC060 /* Project object */;
+}

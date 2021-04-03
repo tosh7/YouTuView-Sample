@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1992D861261843F500DEC060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D860261843F500DEC060 /* AppDelegate.swift */; };
-		1992D865261843F500DEC060 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D864261843F500DEC060 /* ViewController.swift */; };
+		1992D865261843F500DEC060 /* WatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D864261843F500DEC060 /* WatchViewController.swift */; };
 		1992D86A261843F600DEC060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1992D869261843F600DEC060 /* Assets.xcassets */; };
 		1992D86D261843F600DEC060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1992D86B261843F600DEC060 /* LaunchScreen.storyboard */; };
 		1992D878261843F600DEC060 /* YouTuViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D877261843F600DEC060 /* YouTuViewTests.swift */; };
 		1992D883261843F600DEC060 /* YouTuViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D882261843F600DEC060 /* YouTuViewUITests.swift */; };
 		1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D8902618483800DEC060 /* SceneDelegate.swift */; };
+		1992D893261849BD00DEC060 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D892261849BD00DEC060 /* ListViewController.swift */; };
+		1992D89726184B1D00DEC060 /* SuggestVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D89626184B1D00DEC060 /* SuggestVideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		1992D85D261843F500DEC060 /* YouTuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1992D860261843F500DEC060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1992D864261843F500DEC060 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1992D864261843F500DEC060 /* WatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewController.swift; sourceTree = "<group>"; };
 		1992D869261843F600DEC060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1992D86C261843F600DEC060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1992D86E261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		1992D882261843F600DEC060 /* YouTuViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTuViewUITests.swift; sourceTree = "<group>"; };
 		1992D884261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1992D8902618483800DEC060 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1992D892261849BD00DEC060 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1992D89626184B1D00DEC060 /* SuggestVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestVideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,11 @@
 			children = (
 				1992D860261843F500DEC060 /* AppDelegate.swift */,
 				1992D8902618483800DEC060 /* SceneDelegate.swift */,
-				1992D864261843F500DEC060 /* ViewController.swift */,
 				1992D869261843F600DEC060 /* Assets.xcassets */,
 				1992D86B261843F600DEC060 /* LaunchScreen.storyboard */,
 				1992D86E261843F600DEC060 /* Info.plist */,
+				1992D89426184A2900DEC060 /* ViewContollers */,
+				1992D89526184B0400DEC060 /* Views */,
 			);
 			path = YouTuView;
 			sourceTree = "<group>";
@@ -123,6 +128,23 @@
 				1992D884261843F600DEC060 /* Info.plist */,
 			);
 			path = YouTuViewUITests;
+			sourceTree = "<group>";
+		};
+		1992D89426184A2900DEC060 /* ViewContollers */ = {
+			isa = PBXGroup;
+			children = (
+				1992D892261849BD00DEC060 /* ListViewController.swift */,
+				1992D864261843F500DEC060 /* WatchViewController.swift */,
+			);
+			path = ViewContollers;
+			sourceTree = "<group>";
+		};
+		1992D89526184B0400DEC060 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1992D89626184B1D00DEC060 /* SuggestVideoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1992D865261843F500DEC060 /* ViewController.swift in Sources */,
+				1992D865261843F500DEC060 /* WatchViewController.swift in Sources */,
 				1992D861261843F500DEC060 /* AppDelegate.swift in Sources */,
+				1992D89726184B1D00DEC060 /* SuggestVideoView.swift in Sources */,
+				1992D893261849BD00DEC060 /* ListViewController.swift in Sources */,
 				1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

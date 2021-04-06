@@ -1,7 +1,7 @@
 import UIKit
 import SnapKit
 
-final class SuggestCollectionViewCell: UICollectionViewCell {
+final class SuggestCollectionViewCell: UICollectionViewListCell {
     init() {
         super.init(frame: .zero)
     }
@@ -9,6 +9,7 @@ final class SuggestCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) { fatalError() }
 
     private var suggestView: SuggestView?
+    private var item: Item?
 
     func setup(info: VideoInfo) {
         let suggestView = SuggestView(info: info)
@@ -20,5 +21,11 @@ final class SuggestCollectionViewCell: UICollectionViewCell {
         }
 
         self.suggestView = suggestView
+    }
+
+    func updateWithItem(_ newItem: Item) {
+        guard item != newItem else { return }
+        item = newItem
+        setNeedsUpdateConfiguration()
     }
 }

@@ -1,6 +1,6 @@
 import UIKit
 
-struct VideoInfo {
+struct VideoInfo: Hashable {
     var thumbnail: UIImage
     var icon: UIImage
     var videoTitle: String

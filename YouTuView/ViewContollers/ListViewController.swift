@@ -32,6 +32,7 @@ final class ListViewController: UIViewController {
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>! = nil
 }
 
+// MARK: Layout
 extension ListViewController {
     // Use UICollectionViewList
     private func createLayout() -> UICollectionViewLayout {
@@ -40,6 +41,7 @@ extension ListViewController {
     }
 }
 
+// MARK: DataSource
 // Not Inheriting UICollectionViewDataSource, but works like it is
 extension ListViewController {
     private func configureHierachy() {
@@ -70,4 +72,9 @@ extension ListViewController {
     }
 }
 
-extension ListViewController: UICollectionViewDelegate {}
+// MARK: Delegate
+extension ListViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+    }
+}

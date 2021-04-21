@@ -5,16 +5,19 @@ private enum Section: Hashable {
 }
 
 struct Item: Hashable {
-    let videos: [VideoInfo]
+    let videos: VideoInfo
 
-    init(videos: [VideoInfo]) {
+    init(videos: VideoInfo) {
         self.videos = videos
     }
 
     private let identifier = UUID()
 
     static let all = [
-        Item(videos: [])
+        Item(videos: VideoInfo(thumbnail: R.image.thumbnail1()!, icon: R.image.thumbnail1()!, videoTitle: "Let me show you my speciality", createrName: "HikakinTV", viewsCount: "13M", uploadedTime: "2020/2/21")),
+        Item(videos: VideoInfo(thumbnail: R.image.thumbnail2()!, icon: R.image.thumbnail1()!, videoTitle: "How to deal with cold", createrName: "HikakinTV", viewsCount: "14M", uploadedTime: "2020/2/23")),
+        Item(videos: VideoInfo(thumbnail: R.image.thumbnail3()!, icon: R.image.thumbnail1()!, videoTitle: "Quitting broadcasts", createrName: "HikakinTV", viewsCount: "130K", uploadedTime: "2020/3/20")),
+        Item(videos: VideoInfo(thumbnail: R.image.thumbnail4()!, icon: R.image.thumbnail1()!, videoTitle: "Marriage prank!", createrName: "Raphael", viewsCount: "4M", uploadedTime: "2020/3/20"))
     ]
 }
 
@@ -30,6 +33,15 @@ final class ListViewController: UIViewController {
 
     private lazy var collectionView: UICollectionView = .init(frame: self.view.bounds, collectionViewLayout: createLayout())
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>! = nil
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        collectionView.register(SuggestCollectionViewCell.self, forCellWithReuseIdentifier: String(describing: SuggestCollectionViewCell.self))
+
+        configureHierachy()
+        configureDataSource()
+    }
 }
 
 // MARK: Layout
@@ -61,7 +73,9 @@ extension ListViewController {
 
         dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView) {
             collectionView, indexPath, item -> UICollectionViewCell? in
-            return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: item)
+            let cell = collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: item)
+            cell.setup(info: Item.all[indexPath.row].videos)
+            return cell
         }
 
         // initial data

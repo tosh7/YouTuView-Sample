@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 
 final class SuggestCollectionViewCell: UICollectionViewListCell {
-    init() {
+    override init(frame: CGRect) {
         super.init(frame: .zero)
     }
 
@@ -18,6 +18,7 @@ final class SuggestCollectionViewCell: UICollectionViewListCell {
 
         suggestView.snp.makeConstraints {
             $0.edges.equalToSuperview()
+            $0.height.equalTo(300)
         }
 
         self.suggestView = suggestView

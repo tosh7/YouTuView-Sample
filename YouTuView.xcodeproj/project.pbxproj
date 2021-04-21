@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19409C0E26301AF70079A110 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19409C0D26301AF70079A110 /* R.generated.swift */; };
 		195F66922618526B00D09A01 /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F66912618526B00D09A01 /* VideoInfo.swift */; };
 		195F669626186A5400D09A01 /* SuggestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F669526186A5400D09A01 /* SuggestCollectionViewCell.swift */; };
 		195F669826186C7400D09A01 /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F669726186C7400D09A01 /* SectionType.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		1399D3F664F781D1F980C9B0 /* Pods-YouTuView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTuView.release.xcconfig"; path = "Target Support Files/Pods-YouTuView/Pods-YouTuView.release.xcconfig"; sourceTree = "<group>"; };
 		1751C06553515067507936F7 /* Pods_YouTuView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTuView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19409C0D26301AF70079A110 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		195F66912618526B00D09A01 /* VideoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
 		195F669526186A5400D09A01 /* SuggestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestCollectionViewCell.swift; sourceTree = "<group>"; };
 		195F669726186C7400D09A01 /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		1992D85F261843F500DEC060 /* YouTuView */ = {
 			isa = PBXGroup;
 			children = (
+				19409C0D26301AF70079A110 /* R.generated.swift */,
 				1992D860261843F500DEC060 /* AppDelegate.swift */,
 				1992D8902618483800DEC060 /* SceneDelegate.swift */,
 				195F669726186C7400D09A01 /* SectionType.swift */,
@@ -408,6 +411,7 @@
 				195F669626186A5400D09A01 /* SuggestCollectionViewCell.swift in Sources */,
 				195F669826186C7400D09A01 /* SectionType.swift in Sources */,
 				1992D893261849BD00DEC060 /* ListViewController.swift in Sources */,
+				19409C0E26301AF70079A110 /* R.generated.swift in Sources */,
 				1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */,
 				195F669A26186CAC00D09A01 /* ListSection.swift in Sources */,
 			);

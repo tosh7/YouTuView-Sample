@@ -42,6 +42,12 @@ final class ListViewController: UIViewController {
         configureHierachy()
         configureDataSource()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 }
 
 // MARK: Layout
@@ -90,6 +96,9 @@ extension ListViewController {
 extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+
+        let watchViewController = WatchViewController(video: Item.all[indexPath.row].videos)
+        self.navigationController?.pushViewController(watchViewController, animated: true)
     }
 
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {

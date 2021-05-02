@@ -38,20 +38,11 @@ final class YouTubeLikeAnimator: NSObject, UIViewControllerAnimatedTransitioning
         let containerView = transitionContext.containerView
         containerView.insertSubview(toView, aboveSubview: fromView)
 
-        // 遷移先のviewを画面の上部に移動させておく
-        toView.frame = toView.frame.offsetBy(dx: 0, dy: -containerView.frame.size.height)
+        toView.frame = toView.frame.offsetBy(dx: 0, dy: containerView.frame.size.height)
 
         UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0.05, options: .curveEaseInOut, animations: { () -> Void in
-            // 遷移元のviewを下げながらalphaを暗くする
-            fromView.frame = fromView.frame.offsetBy(dx: 0, dy: self.movedDistance)
-            fromView.alpha = 0.7
-
-            // 遷移先のviewを画面全体に移動
             toView.frame = containerView.frame
         }) { (finished) -> Void in
-            // 変更をもとに戻してアニメーション終了
-            fromView.frame = fromView.frame.offsetBy(dx: 0, dy: -self.movedDistance)
-            fromView.alpha = 1.0
             transitionContext.completeTransition(true)
         }
     }
@@ -62,20 +53,9 @@ final class YouTubeLikeAnimator: NSObject, UIViewControllerAnimatedTransitioning
         let containerView = transitionContext.containerView
         containerView.insertSubview(toView, belowSubview: fromView)
 
-        // 遷移先のviewを画面の下部に移動させておく
-        toView.frame = toView.frame.offsetBy(dx: 0, dy: containerView.frame.size.height)
-
         UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0.05, options: .curveEaseInOut, animations: { () -> Void in
-            // 遷移元のviewを上げながらalphaを暗くする
-            fromView.frame = fromView.frame.offsetBy(dx: 0, dy: -self.movedDistance)
-            fromView.alpha = 0.1
-
-            // 遷移先のviewを画面全体に移動
-            toView.frame = containerView.frame
+            fromView.frame = fromView.frame.offsetBy(dx: 0, dy: containerView.frame.size.height)
         }) { (finished) -> Void in
-            // 変更をもとに戻してアニメーション終了
-            fromView.frame = fromView.frame.offsetBy(dx: 0, dy: self.movedDistance) // 元の位置に戻す
-            fromView.alpha = 1.0
             transitionContext.completeTransition(true)
         }
     }

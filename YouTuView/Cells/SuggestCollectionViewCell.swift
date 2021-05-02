@@ -12,6 +12,9 @@ final class SuggestCollectionViewCell: UICollectionViewListCell {
     private var item: Item?
 
     func setup(info: VideoInfo) {
+        // removing cell's indicator
+        self.accessories = []
+        
         let suggestView = SuggestView(info: info)
 
         self.contentView.addSubview(suggestView)

@@ -21,11 +21,18 @@ final class WatchViewController: UIViewController {
 
     private func setupViews() {
         self.view.addSubview(videoPlayerImageView)
+        self.view.addSubview(popButton)
 
         videoPlayerImageView.snp.makeConstraints {
             $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
             $0.leading.trailing.equalToSuperview()
             $0.height.equalTo(videoPlayerImageView.snp.width).multipliedBy(720.0 / 1280.0)
+        }
+        popButton.snp.makeConstraints {
+            $0.top.equalTo(videoPlayerImageView.snp.bottom).offset(30)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(100)
+            $0.height.equalTo(40)
         }
     }
 
@@ -35,5 +42,17 @@ final class WatchViewController: UIViewController {
         imageView.image = self.video.thumbnail
         return imageView
     }()
+
+    private lazy var popButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("pop", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        button.addTarget(self, action: #selector(buttonDidTapp), for: .touchUpInside)
+        return button
+    }()
+
+    @objc private func buttonDidTapp() {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 

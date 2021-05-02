@@ -21,6 +21,8 @@
 		1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D8902618483800DEC060 /* SceneDelegate.swift */; };
 		1992D893261849BD00DEC060 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D892261849BD00DEC060 /* ListViewController.swift */; };
 		1992D89726184B1D00DEC060 /* SuggestVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D89626184B1D00DEC060 /* SuggestVideoView.swift */; };
+		19C9B971263E8DD300D1F0C5 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9B970263E8DD300D1F0C5 /* NavigationControllerDelegate.swift */; };
+		19C9B973263E8FD700D1F0C5 /* YouTubeLikeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9B972263E8FD700D1F0C5 /* YouTubeLikeAnimator.swift */; };
 		D808AC4C0CC176A50A400F1D /* Pods_YouTuView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1751C06553515067507936F7 /* Pods_YouTuView.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		1992D8902618483800DEC060 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1992D892261849BD00DEC060 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1992D89626184B1D00DEC060 /* SuggestVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestVideoView.swift; sourceTree = "<group>"; };
+		19C9B970263E8DD300D1F0C5 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		19C9B972263E8FD700D1F0C5 /* YouTubeLikeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeLikeAnimator.swift; sourceTree = "<group>"; };
 		87A5C858DDEB257DE20D04D3 /* Pods-YouTuView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTuView.debug.xcconfig"; path = "Target Support Files/Pods-YouTuView/Pods-YouTuView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +158,7 @@
 				195F6694261869FC00D09A01 /* Cells */,
 				195F6693261869F400D09A01 /* Sections */,
 				195F66902618524E00D09A01 /* Model */,
+				19C9B96F263E8D9D00D1F0C5 /* Utils */,
 			);
 			path = YouTuView;
 			sourceTree = "<group>";
@@ -191,6 +196,15 @@
 				1992D89626184B1D00DEC060 /* SuggestVideoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		19C9B96F263E8D9D00D1F0C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				19C9B970263E8DD300D1F0C5 /* NavigationControllerDelegate.swift */,
+				19C9B972263E8FD700D1F0C5 /* YouTubeLikeAnimator.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		8FB6D86E4A6C17CDC67D3C60 /* Frameworks */ = {
@@ -409,8 +423,10 @@
 				1992D89726184B1D00DEC060 /* SuggestVideoView.swift in Sources */,
 				195F66922618526B00D09A01 /* VideoInfo.swift in Sources */,
 				195F669626186A5400D09A01 /* SuggestCollectionViewCell.swift in Sources */,
+				19C9B973263E8FD700D1F0C5 /* YouTubeLikeAnimator.swift in Sources */,
 				195F669826186C7400D09A01 /* SectionType.swift in Sources */,
 				1992D893261849BD00DEC060 /* ListViewController.swift in Sources */,
+				19C9B971263E8DD300D1F0C5 /* NavigationControllerDelegate.swift in Sources */,
 				19409C0E26301AF70079A110 /* R.generated.swift in Sources */,
 				1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */,
 				195F669A26186CAC00D09A01 /* ListSection.swift in Sources */,

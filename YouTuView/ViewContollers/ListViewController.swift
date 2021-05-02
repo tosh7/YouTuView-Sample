@@ -33,6 +33,7 @@ final class ListViewController: UIViewController {
 
     private lazy var collectionView: UICollectionView = .init(frame: self.view.bounds, collectionViewLayout: createLayout())
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>! = nil
+    private var navigationDelegate: UINavigationControllerDelegate = NavigationViewControllerDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,7 @@ final class ListViewController: UIViewController {
         super.viewWillAppear(animated)
 
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.delegate = navigationDelegate
     }
 }
 

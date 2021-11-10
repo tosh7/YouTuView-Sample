@@ -40,6 +40,10 @@ final class WatchViewController: UIViewController {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.image = self.video.thumbnail
+        imageView.isUserInteractionEnabled = true
+        let swipeDownGesture = UISwipeGestureRecognizer(target: self, action: #selector(playerViewDidSwipeDown))
+        swipeDownGesture.direction = .down
+        imageView.addGestureRecognizer(swipeDownGesture)
         return imageView
     }()
 
@@ -52,6 +56,10 @@ final class WatchViewController: UIViewController {
     }()
 
     @objc private func buttonDidTapp() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @objc private func playerViewDidSwipeDown() {
         self.navigationController?.popViewController(animated: true)
     }
 }

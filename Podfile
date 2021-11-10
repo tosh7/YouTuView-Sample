@@ -6,7 +6,7 @@ target 'YouTuView' do
   use_frameworks!
 
   # Pods for YouTuView
-    pod 'SnapKit', '~> 5.0.0'
+    pod 'SnapKit'
     pod 'R.swift'
 
 end

@@ -41,9 +41,8 @@ final class WatchViewController: UIViewController {
         imageView.contentMode = .scaleAspectFit
         imageView.image = self.video.thumbnail
         imageView.isUserInteractionEnabled = true
-        let swipeDownGesture = UISwipeGestureRecognizer(target: self, action: #selector(playerViewDidSwipeDown))
-        swipeDownGesture.direction = .down
-        imageView.addGestureRecognizer(swipeDownGesture)
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(playerViewDidSwipeDown))
+        imageView.addGestureRecognizer(panGesture)
         return imageView
     }()
 
@@ -59,8 +58,21 @@ final class WatchViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    @objc private func playerViewDidSwipeDown() {
-        self.navigationController?.popViewController(animated: true)
+    @objc private func playerViewDidSwipeDown(gesture: UIPanGestureRecognizer) {
+        let move = gesture.translation(in: gesture.view)
+        guard move.y > 0 else {
+            view.transform = .identity
+            return
+        }
+        
+        if gesture.state == .changed {
+            view.transform = CGAffineTransform(translationX: 0, y: move.y)
+        } else if gesture.state == .ended {
+            if move.y > UIScreen.main.bounds.height / 3 {
+                self.navigationController?.popViewController(animated: true)
+            } else {
+                view.transform = .identity
+            }
+        }
     }
 }
-

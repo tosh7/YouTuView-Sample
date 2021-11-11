@@ -16,8 +16,6 @@
 		1992D865261843F500DEC060 /* WatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D864261843F500DEC060 /* WatchViewController.swift */; };
 		1992D86A261843F600DEC060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1992D869261843F600DEC060 /* Assets.xcassets */; };
 		1992D86D261843F600DEC060 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1992D86B261843F600DEC060 /* LaunchScreen.storyboard */; };
-		1992D878261843F600DEC060 /* YouTuViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D877261843F600DEC060 /* YouTuViewTests.swift */; };
-		1992D883261843F600DEC060 /* YouTuViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D882261843F600DEC060 /* YouTuViewUITests.swift */; };
 		1992D8912618483800DEC060 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D8902618483800DEC060 /* SceneDelegate.swift */; };
 		1992D893261849BD00DEC060 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D892261849BD00DEC060 /* ListViewController.swift */; };
 		1992D89726184B1D00DEC060 /* SuggestVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1992D89626184B1D00DEC060 /* SuggestVideoView.swift */; };
@@ -25,23 +23,6 @@
 		19C9B973263E8FD700D1F0C5 /* YouTubeLikeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C9B972263E8FD700D1F0C5 /* YouTubeLikeAnimator.swift */; };
 		D808AC4C0CC176A50A400F1D /* Pods_YouTuView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1751C06553515067507936F7 /* Pods_YouTuView.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1992D874261843F600DEC060 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1992D855261843F500DEC060 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1992D85C261843F500DEC060;
-			remoteInfo = YouTuView;
-		};
-		1992D87F261843F600DEC060 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1992D855261843F500DEC060 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1992D85C261843F500DEC060;
-			remoteInfo = YouTuView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1399D3F664F781D1F980C9B0 /* Pods-YouTuView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTuView.release.xcconfig"; path = "Target Support Files/Pods-YouTuView/Pods-YouTuView.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,12 +38,6 @@
 		1992D869261843F600DEC060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1992D86C261843F600DEC060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1992D86E261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1992D873261843F600DEC060 /* YouTuViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTuViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1992D877261843F600DEC060 /* YouTuViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTuViewTests.swift; sourceTree = "<group>"; };
-		1992D879261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1992D87E261843F600DEC060 /* YouTuViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTuViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1992D882261843F600DEC060 /* YouTuViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTuViewUITests.swift; sourceTree = "<group>"; };
-		1992D884261843F600DEC060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1992D8902618483800DEC060 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1992D892261849BD00DEC060 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1992D89626184B1D00DEC060 /* SuggestVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestVideoView.swift; sourceTree = "<group>"; };
@@ -77,20 +52,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D808AC4C0CC176A50A400F1D /* Pods_YouTuView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1992D870261843F600DEC060 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1992D87B261843F600DEC060 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				1992D85F261843F500DEC060 /* YouTuView */,
-				1992D876261843F600DEC060 /* YouTuViewTests */,
-				1992D881261843F600DEC060 /* YouTuViewUITests */,
 				1992D85E261843F500DEC060 /* Products */,
 				FBA398738BB7536E8B96AA31 /* Pods */,
 				8FB6D86E4A6C17CDC67D3C60 /* Frameworks */,
@@ -137,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				1992D85D261843F500DEC060 /* YouTuView.app */,
-				1992D873261843F600DEC060 /* YouTuViewTests.xctest */,
-				1992D87E261843F600DEC060 /* YouTuViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,24 +118,6 @@
 				19C9B96F263E8D9D00D1F0C5 /* Utils */,
 			);
 			path = YouTuView;
-			sourceTree = "<group>";
-		};
-		1992D876261843F600DEC060 /* YouTuViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				1992D877261843F600DEC060 /* YouTuViewTests.swift */,
-				1992D879261843F600DEC060 /* Info.plist */,
-			);
-			path = YouTuViewTests;
-			sourceTree = "<group>";
-		};
-		1992D881261843F600DEC060 /* YouTuViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1992D882261843F600DEC060 /* YouTuViewUITests.swift */,
-				1992D884261843F600DEC060 /* Info.plist */,
-			);
-			path = YouTuViewUITests;
 			sourceTree = "<group>";
 		};
 		1992D89426184A2900DEC060 /* ViewContollers */ = {
@@ -247,42 +186,6 @@
 			productReference = 1992D85D261843F500DEC060 /* YouTuView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1992D872261843F600DEC060 /* YouTuViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1992D88A261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuViewTests" */;
-			buildPhases = (
-				1992D86F261843F600DEC060 /* Sources */,
-				1992D870261843F600DEC060 /* Frameworks */,
-				1992D871261843F600DEC060 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1992D875261843F600DEC060 /* PBXTargetDependency */,
-			);
-			name = YouTuViewTests;
-			productName = YouTuViewTests;
-			productReference = 1992D873261843F600DEC060 /* YouTuViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1992D87D261843F600DEC060 /* YouTuViewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1992D88D261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuViewUITests" */;
-			buildPhases = (
-				1992D87A261843F600DEC060 /* Sources */,
-				1992D87B261843F600DEC060 /* Frameworks */,
-				1992D87C261843F600DEC060 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1992D880261843F600DEC060 /* PBXTargetDependency */,
-			);
-			name = YouTuViewUITests;
-			productName = YouTuViewUITests;
-			productReference = 1992D87E261843F600DEC060 /* YouTuViewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -294,14 +197,6 @@
 				TargetAttributes = {
 					1992D85C261843F500DEC060 = {
 						CreatedOnToolsVersion = 12.5;
-					};
-					1992D872261843F600DEC060 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 1992D85C261843F500DEC060;
-					};
-					1992D87D261843F600DEC060 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 1992D85C261843F500DEC060;
 					};
 				};
 			};
@@ -319,8 +214,6 @@
 			projectRoot = "";
 			targets = (
 				1992D85C261843F500DEC060 /* YouTuView */,
-				1992D872261843F600DEC060 /* YouTuViewTests */,
-				1992D87D261843F600DEC060 /* YouTuViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -332,20 +225,6 @@
 			files = (
 				1992D86D261843F600DEC060 /* LaunchScreen.storyboard in Resources */,
 				1992D86A261843F600DEC060 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1992D871261843F600DEC060 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1992D87C261843F600DEC060 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,36 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1992D86F261843F600DEC060 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1992D878261843F600DEC060 /* YouTuViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1992D87A261843F600DEC060 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1992D883261843F600DEC060 /* YouTuViewUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1992D875261843F600DEC060 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1992D85C261843F500DEC060 /* YouTuView */;
-			targetProxy = 1992D874261843F600DEC060 /* PBXContainerItemProxy */;
-		};
-		1992D880261843F600DEC060 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1992D85C261843F500DEC060 /* YouTuView */;
-			targetProxy = 1992D87F261843F600DEC060 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1992D86B261843F600DEC060 /* LaunchScreen.storyboard */ = {
@@ -634,90 +484,6 @@
 			};
 			name = Release;
 		};
-		1992D88B261843F600DEC060 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56787CM63P;
-				INFOPLIST_FILE = YouTuViewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTuView.app/YouTuView";
-			};
-			name = Debug;
-		};
-		1992D88C261843F600DEC060 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56787CM63P;
-				INFOPLIST_FILE = YouTuViewTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouTuView.app/YouTuView";
-			};
-			name = Release;
-		};
-		1992D88E261843F600DEC060 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56787CM63P;
-				INFOPLIST_FILE = YouTuViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YouTuView;
-			};
-			name = Debug;
-		};
-		1992D88F261843F600DEC060 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56787CM63P;
-				INFOPLIST_FILE = YouTuViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = tosh7.YouTuViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YouTuView;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -735,24 +501,6 @@
 			buildConfigurations = (
 				1992D888261843F600DEC060 /* Debug */,
 				1992D889261843F600DEC060 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1992D88A261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1992D88B261843F600DEC060 /* Debug */,
-				1992D88C261843F600DEC060 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1992D88D261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuViewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1992D88E261843F600DEC060 /* Debug */,
-				1992D88F261843F600DEC060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

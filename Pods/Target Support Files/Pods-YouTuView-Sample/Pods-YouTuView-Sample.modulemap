@@ -1,0 +1,6 @@
+framework module Pods_YouTuView_Sample {
+  umbrella header "Pods-YouTuView-Sample-umbrella.h"
+
+  export *
+  module * { export * }
+}

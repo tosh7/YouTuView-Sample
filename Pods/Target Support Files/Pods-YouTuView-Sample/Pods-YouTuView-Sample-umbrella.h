@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_YouTuViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_YouTuViewVersionString[];
+FOUNDATION_EXPORT double Pods_YouTuView_SampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_YouTuView_SampleVersionString[];
 

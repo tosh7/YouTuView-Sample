@@ -32,7 +32,7 @@
 		195F669526186A5400D09A01 /* SuggestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestCollectionViewCell.swift; sourceTree = "<group>"; };
 		195F669726186C7400D09A01 /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
 		195F669926186CAC00D09A01 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
-		1992D85D261843F500DEC060 /* YouTuView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTuView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1992D85D261843F500DEC060 /* YouTuView-Sample-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTuView-Sample-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1992D860261843F500DEC060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1992D864261843F500DEC060 /* WatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewController.swift; sourceTree = "<group>"; };
 		1992D869261843F600DEC060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		1992D854261843F500DEC060 = {
 			isa = PBXGroup;
 			children = (
-				1992D85F261843F500DEC060 /* YouTuView */,
+				1992D85F261843F500DEC060 /* YouTuView-Sample */,
 				1992D85E261843F500DEC060 /* Products */,
 				FBA398738BB7536E8B96AA31 /* Pods */,
 				8FB6D86E4A6C17CDC67D3C60 /* Frameworks */,
@@ -95,12 +95,12 @@
 		1992D85E261843F500DEC060 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1992D85D261843F500DEC060 /* YouTuView.app */,
+				1992D85D261843F500DEC060 /* YouTuView-Sample-Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1992D85F261843F500DEC060 /* YouTuView */ = {
+		1992D85F261843F500DEC060 /* YouTuView-Sample */ = {
 			isa = PBXGroup;
 			children = (
 				19409C0D26301AF70079A110 /* R.generated.swift */,
@@ -117,7 +117,7 @@
 				195F66902618524E00D09A01 /* Model */,
 				19C9B96F263E8D9D00D1F0C5 /* Utils */,
 			);
-			path = YouTuView;
+			path = "YouTuView-Sample";
 			sourceTree = "<group>";
 		};
 		1992D89426184A2900DEC060 /* ViewContollers */ = {
@@ -166,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1992D85C261843F500DEC060 /* YouTuView */ = {
+		1992D85C261843F500DEC060 /* YouTuView-Sample-Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1992D887261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuView" */;
+			buildConfigurationList = 1992D887261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuView-Sample-Sample" */;
 			buildPhases = (
 				2CB1F414A4D81A986C1F4E63 /* [CP] Check Pods Manifest.lock */,
 				195F668D26184F7200D09A01 /* R.swift */,
@@ -181,9 +181,9 @@
 			);
 			dependencies = (
 			);
-			name = YouTuView;
+			name = "YouTuView-Sample-Sample";
 			productName = YouTuView;
-			productReference = 1992D85D261843F500DEC060 /* YouTuView.app */;
+			productReference = 1992D85D261843F500DEC060 /* YouTuView-Sample-Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1992D858261843F500DEC060 /* Build configuration list for PBXProject "YouTuView" */;
+			buildConfigurationList = 1992D858261843F500DEC060 /* Build configuration list for PBXProject "YouTuView-Sample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1992D85C261843F500DEC060 /* YouTuView */,
+				1992D85C261843F500DEC060 /* YouTuView-Sample-Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -450,7 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56787CM63P;
-				INFOPLIST_FILE = YouTuView/Info.plist;
+				INFOPLIST_FILE = "YouTuView-Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,7 +471,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56787CM63P;
-				INFOPLIST_FILE = YouTuView/Info.plist;
+				INFOPLIST_FILE = "YouTuView-Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,7 +487,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1992D858261843F500DEC060 /* Build configuration list for PBXProject "YouTuView" */ = {
+		1992D858261843F500DEC060 /* Build configuration list for PBXProject "YouTuView-Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1992D885261843F600DEC060 /* Debug */,
@@ -496,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1992D887261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuView" */ = {
+		1992D887261843F600DEC060 /* Build configuration list for PBXNativeTarget "YouTuView-Sample-Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1992D888261843F600DEC060 /* Debug */,

@@ -24,6 +24,7 @@ final class WatchViewController: UIViewController {
     private func setupViews() {
         view.addSubview(videoPlayerImageView)
         view.addSubview(videoListView)
+        view.addSubview(smokeView)
 
         videoPlayerImageView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin)
@@ -35,6 +36,10 @@ final class WatchViewController: UIViewController {
             $0.top.equalTo(videoPlayerImageView.snp.bottom)
             $0.leading.trailing.equalToSuperview()
             $0.bottom.equalToSuperview()
+        }
+
+        smokeView.snp.makeConstraints {
+            $0.edges.equalTo(videoListView)
         }
     }
 
@@ -59,6 +64,14 @@ final class WatchViewController: UIViewController {
             forCellWithReuseIdentifier: String(describing: ItemDetailCell.self))
         return collectionView
     }()
+
+    private let smokeView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        view.isUserInteractionEnabled = false
+        view.alpha = 0
+        return view
+    }()
     
     @objc private func playerViewDidSwipeDown(gesture: UIPanGestureRecognizer) {
         let move = gesture.translation(in: gesture.view)
@@ -69,6 +82,16 @@ final class WatchViewController: UIViewController {
 
         if gesture.state == .changed {
             view.transform = CGAffineTransform(translationX: 0, y: move.y)
+
+            if move.y > UIScreen.main.bounds.height * 0.6 {
+                videoListView.alpha = 0
+                smokeView.alpha = 0
+                view.backgroundColor = .clear
+            } else {
+                videoListView.alpha = 1
+                smokeView.alpha = move.y / UIScreen.main.bounds.height
+                view.backgroundColor = .white
+            }
         } else if gesture.state == .ended {
             if move.y > UIScreen.main.bounds.height / 3 {
                 self.dismiss(animated: true, completion: nil)

@@ -96,7 +96,7 @@ extension ListViewController: UICollectionViewDelegate {
         collectionView.deselectItem(at: indexPath, animated: true)
 
         let watchViewController = WatchViewController(video: Item.all[indexPath.row].videos)
-        watchViewController.modalPresentationStyle = .fullScreen
+        watchViewController.modalPresentationStyle = .overFullScreen
         self.present(watchViewController, animated: true, completion: nil)
     }
 

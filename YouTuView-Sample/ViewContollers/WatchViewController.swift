@@ -51,7 +51,12 @@ final class WatchViewController: UIViewController {
     private lazy var videoListView: UICollectionView = {
         let collectionView: UICollectionView = .init(frame: self.view.bounds, collectionViewLayout: self.createLayout())
         collectionView.delegate = self
-        collectionView.register(SuggestCollectionViewCell.self, forCellWithReuseIdentifier: String(describing: SuggestCollectionViewCell.self))
+        collectionView.register(
+            SuggestCollectionViewCell.self,
+            forCellWithReuseIdentifier: String(describing: SuggestCollectionViewCell.self))
+        collectionView.register(
+            ItemDetailCell.self,
+            forCellWithReuseIdentifier: String(describing: ItemDetailCell.self))
         return collectionView
     }()
     
@@ -87,6 +92,10 @@ extension WatchViewController {
 // Not Inheriting UICollectionViewDataSource, but works like it is
 extension WatchViewController {
     private func configureDataSource() {
+        let cellInitialRegistration = UICollectionView.CellRegistration<ItemDetailCell, Item> { cell, indexPath, item in
+            cell.accessories = [.disclosureIndicator()]
+        }
+
         let cellRegistration = UICollectionView.CellRegistration<SuggestCollectionViewCell, Item> { cell, indexPath, item in
             cell.updateWithItem(item)
             cell.accessories = [.disclosureIndicator()]
@@ -94,9 +103,15 @@ extension WatchViewController {
 
         dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: videoListView) {
             collectionView, indexPath, item -> UICollectionViewCell? in
-            let cell = collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: item)
-            cell.setup(info: Item.all[indexPath.row].videos)
-            return cell
+            if indexPath.row == 0 {
+                let cell = collectionView.dequeueConfiguredReusableCell(using: cellInitialRegistration, for: indexPath, item: item)
+                cell.videoInfo = self.video
+                return cell
+            } else {
+                let cell = collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: item)
+                cell.setup(info: Item.all[indexPath.row].videos)
+                return cell
+            }
         }
 
         // initial data
@@ -112,9 +127,9 @@ extension WatchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
 
+        guard indexPath.row != 0 else { return }
         let watchViewController = WatchViewController(video: Item.all[indexPath.row].videos)
-        watchViewController.modalPresentationStyle = .overFullScreen
-        self.present(watchViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(watchViewController, animated: true)
     }
 
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {

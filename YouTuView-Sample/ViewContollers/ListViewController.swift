@@ -33,7 +33,6 @@ final class ListViewController: UIViewController {
 
     private lazy var collectionView: UICollectionView = .init(frame: self.view.bounds, collectionViewLayout: createLayout())
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>! = nil
-    private var navigationDelegate: UINavigationControllerDelegate = NavigationViewControllerDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +45,6 @@ final class ListViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.navigationController?.delegate = navigationDelegate
     }
 }
 
@@ -100,7 +96,8 @@ extension ListViewController: UICollectionViewDelegate {
         collectionView.deselectItem(at: indexPath, animated: true)
 
         let watchViewController = WatchViewController(video: Item.all[indexPath.row].videos)
-        self.navigationController?.pushViewController(watchViewController, animated: true)
+        watchViewController.modalPresentationStyle = .fullScreen
+        self.present(watchViewController, animated: true, completion: nil)
     }
 
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {

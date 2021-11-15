@@ -55,7 +55,7 @@ final class WatchViewController: UIViewController {
     }()
 
     @objc private func buttonDidTapp() {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc private func playerViewDidSwipeDown(gesture: UIPanGestureRecognizer) {
@@ -64,12 +64,12 @@ final class WatchViewController: UIViewController {
             view.transform = .identity
             return
         }
-        
+
         if gesture.state == .changed {
             view.transform = CGAffineTransform(translationX: 0, y: move.y)
         } else if gesture.state == .ended {
             if move.y > UIScreen.main.bounds.height / 3 {
-                self.navigationController?.popViewController(animated: true)
+                self.dismiss(animated: true, completion: nil)
             } else {
                 view.transform = .identity
             }

@@ -83,13 +83,12 @@ final class WatchViewController: UIViewController {
         if gesture.state == .changed {
             view.transform = CGAffineTransform(translationX: 0, y: move.y)
 
+            smokeView.alpha = move.y / UIScreen.main.bounds.height
             if move.y > UIScreen.main.bounds.height * 0.6 {
                 videoListView.alpha = 0
-                smokeView.alpha = 0
                 view.backgroundColor = .clear
             } else {
                 videoListView.alpha = 1
-                smokeView.alpha = move.y / UIScreen.main.bounds.height
                 view.backgroundColor = .white
             }
         } else if gesture.state == .ended {

@@ -20,6 +20,8 @@ final class SuggestView: UIView {
 
     private let iconView: UIImageView = {
         let imageView = UIImageView()
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 15
         return imageView
     }()
 
@@ -30,6 +32,8 @@ final class SuggestView: UIView {
 
     private let subTitleLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .gray
+        label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
 

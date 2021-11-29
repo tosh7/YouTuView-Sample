@@ -20,20 +20,22 @@ final class ItemDetailCell: UICollectionViewListCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 13)
+        label.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
 
     private let subTitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .gray
-        label.font = UIFont.systemFont(ofSize: 8)
+        label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
 
     private let iconImage: UIImageView = {
         let image = UIImageView()
-        image.contentMode = .scaleAspectFit
+        image.contentMode = .scaleAspectFill
+        image.layer.cornerRadius = 20
+        image.clipsToBounds = true
         return image
     }()
 
@@ -72,7 +74,7 @@ final class ItemDetailCell: UICollectionViewListCell {
         createrNameLabel.snp.makeConstraints {
             $0.leading.equalTo(iconImage.snp.trailing).offset(12)
             $0.trailing.equalToSuperview().offset(-12)
-            $0.bottom.equalToSuperview().offset(-4)
+            $0.centerY.equalTo(iconImage)
         }
     }
 
